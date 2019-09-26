@@ -10,8 +10,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.support.ui import Select
 from group import Group
-
-import unittest, time, re
+import unittest
 
 
 class TestAddGroup(unittest.TestCase):

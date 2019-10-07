@@ -1,7 +1,5 @@
 from selenium.webdriver.firefox import webdriver
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException
 from fixture.session import SessionHelper
 from fixture.group_fixture import GroupHelper
 from fixture.contact_fixture import ContactHelper
@@ -11,7 +9,6 @@ class Application:
 
     def __init__(self):
         self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
         self.group_fixture = GroupHelper(self)
         self.contact_fixture = ContactHelper(self)
